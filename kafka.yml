@@ -1,0 +1,6 @@
+---
+- hosts: tag_Environment_Kafka
+  remote_user: ubuntu
+  become: yes
+  roles:
+    - kafka
