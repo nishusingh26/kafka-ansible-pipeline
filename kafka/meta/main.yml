@@ -1,0 +1,10 @@
+galaxy_info:
+  author: Nishu Kumari
+  description: Budding DevOps Engineer
+  company: MyGurukulam
+  license: license (GPLv2, CC-BY, etc)
+
+  min_ansible_version: 1.2
+  galaxy_tags: []
+#dependencies:
+#  - openjdk 11.0.21
