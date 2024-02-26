@@ -1,18 +1,16 @@
 pipeline {
     agent any
-    environment {
+     environment {
         AWS_ACCESS_KEY_ID     = credentials('access-key')
         AWS_SECRET_ACCESS_KEY = credentials('secret-access-key')
         AWS_DEFAULT_REGION    = 'us-east-1'
     }
     stages {
-        stage('Clone') {
+       stage('Checkout') {
             steps {
-                // Checkout your source code from version control
-                git 'https://github.com/nishusingh26/kafka-ansible-pipeline.git'
+                git branch: 'main', url: 'https://github.com/nishusingh26/kafka-ansible-pipeline.git'
             }
         }
-
         stage('Run Ansible Roles') {
             parallel {
                 stage('Kafka Role') {
