@@ -1,0 +1,6 @@
+---
+- hosts: tag_Environment_Zookeeper
+  remote_user: ubuntu
+  become: yes
+  roles:
+    - kafka
