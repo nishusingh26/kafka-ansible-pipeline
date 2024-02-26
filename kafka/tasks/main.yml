@@ -1,0 +1,6 @@
+---
+- name: Install Kafka
+  include_tasks: install.yml
+
+- name: Configure Kafka
+  include_tasks: configure.yml
