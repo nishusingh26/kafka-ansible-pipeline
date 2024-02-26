@@ -12,6 +12,3 @@ keyed_groups:
       separator: ""
 hostnames:
     - private-ip-address
-compose:
-    ansible_host: private_ip_address
-    ansible_user: ubuntu
