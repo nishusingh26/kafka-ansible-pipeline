@@ -1,0 +1,9 @@
+---
+install_dir: "/usr/local/kafka_installs"
+kafka_ver: "3.6.1"
+kafka_url: "https://dlcdn.apache.org/kafka/{{kafka_ver}}/kafka_2.13-{{kafka_ver}}.tgz"
+kafka_download_timeout_seconds: 600
+kafka_temp: "kafka_temp"
+kafka_dir: "kafka"
+kafka_tar: "kafka_2.13-{{kafka_ver}}.tgz"
+kafka_home: "{{ install_dir }}/kafka_2.13-{{kafka_ver}}"
